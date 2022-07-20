@@ -1,0 +1,35 @@
+@import '../../../config-scss/rem-calc.scss';
+
+:host{
+  .main-poke-list{
+        
+        background-color: var(--gray);
+        border-radius: 10px;
+        
+    }
+
+    .poke-list-header{
+        max-width: 100%;
+        border-radius: 10px 10px 0 0;
+        color: var(--black);
+        
+        img:first-child{
+            width:rem-calc(38);
+        }
+
+        img:nth-child(2){
+            width:rem-calc(18);
+        }
+
+        .btn-order{
+            background: none;
+            border: none;
+
+            strong{
+                font-size: rem-calc(10);
+            }
+        }
+    }
+
+    
+}

@@ -1,0 +1,18 @@
+@import '../../../config-scss/rem-calc.scss';
+
+:host{
+    .poke-card-container{
+        min-height: 70vh;
+        min-width: 231px;
+        width: 50%;
+        border-radius: rem-calc(11);
+        background-color: #f5f5f5;
+        color: var(--black);
+    }
+    img:nth-child(1){
+        width: 50%;
+    }
+    .poke-card-details{
+        background-color: var(--red);
+    }
+}
