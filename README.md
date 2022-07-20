@@ -1,7 +1,6 @@
 # Pokedex
+  Em desenvolvimento.  
+  Usando Angular14+ como Framework
 
-    -- Em desenvolvimento. 
-    -- Usando Angular14+ como Framework
-
-## API CONSUMIDA
-    -- https://pokeapi.co/docs/v2
+## API A SER CONSUMIDA
+   https://pokeapi.co/docs/v2
