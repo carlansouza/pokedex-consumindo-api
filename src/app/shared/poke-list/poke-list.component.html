@@ -3,34 +3,32 @@
         <app-poke-header></app-poke-header>
         <app-poke-search></app-poke-search>
     </div>
+    
     <div class="row w-100">
-        <div class="col-sm-12 col-md-6 col-lg-4 ">
-            <div class="card" style="color: black; max-width: 9.5rem;">
-                <p class="text-end">#999</p>
-                <img src="assets/pokemon/silhouette.svg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Pokemon Name</p>
+        
+            <ng-template ngFor let-pokemon [ngForOf]="getAllPokemons">
+                <div class="col-sm-12 col-md-6 col-lg-4 p-1">
+
+                     <a href="" *ngIf="pokemon.status">
+
+                        <div class="card" 
+                                    style="color: black; max-width: 9.    
+                                    5rem;">
+                            <p class="text-end" style="color: black;" *ngFor="let value of pokemon.status.name">{{value.type.name}}</p>
+                            
+                            <img class="mt-3
+                                        align-self-center" 
+                                    [src]="pokemon.status.sprites.other.dream_world.front_default"   
+                                    [alt]="pokemon.name">
+
+                            <div class="card-body">
+                                <p class="card-text text-center">{{pokemon.name}}</p>
+                            </div>
+                        </div>
+
+                    </a>
                 </div>
-            </div>
+            </ng-template>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="card" style="color: black; max-width: 9.5rem;">
-                <p class="text-end">#999</p>
-                <img src="assets/pokemon/silhouette.svg" class="card-img-top" alt="assets/pokemon/silhouette.svg">
-                <div class="card-body">
-                  <p class="card-text">Pokemon Name</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-4">
-            
-            <div class="card" style="color: black; max-width: 9.5rem;">
-                <p class="text-end">#999</p>
-                <img src="assets/pokemon/silhouette.svg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Pokemon Name</p>
-                </div>
-            </div>
-        </div>
-    </div>
+    
 </div>

@@ -1,10 +1,18 @@
 @import '../../../config-scss/rem-calc.scss';
 
 :host{
+    a{
+        text-decoration: none;
+    }
     .main-poke-list{
-        background-color: #f5f5f5;
+        background-color: #f5f5f5f5;
         border-radius: rem-calc(11);
         min-height: 70vh;
+
+        img:nth-child(1){
+            max-width: rem-calc(60);
+            
+        }
     }
 
     

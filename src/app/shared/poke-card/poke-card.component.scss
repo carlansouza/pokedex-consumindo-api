@@ -1,18 +1,45 @@
 @import '../../../config-scss/rem-calc.scss';
 
 :host{
+    
+    
+
+    p{
+        margin-bottom: 0;
+    }
+
+    button:nth-child(1){
+        background: none;
+        border: none;
+    }
     .poke-card-container{
         min-height: 70vh;
         min-width: 231px;
         width: 50%;
         border-radius: rem-calc(11);
         background-color: #f5f5f5;
-        color: var(--black);
+
     }
-    img:nth-child(1){
-        width: 50%;
-    }
+
     .poke-card-details{
         background-color: var(--red);
+    }
+
+    .header-poke-card{
+        background-color: var(--gray);
+        color: var(--white);
+        border-radius: rem-calc(5);
+
+        button>img:nth-child(1){
+            width: rem-calc(15);
+        }
+    }
+
+    .poke-img{
+        img:nth-child(1){
+            position: relative;
+            
+            width: rem-calc(120);
+        }
     }
 }
